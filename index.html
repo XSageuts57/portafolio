@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Sageuts Company - Portafolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<!-- Elimina tu script actual y usa este -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  // Inicializar EmailJS
+  (function() {
+    emailjs.init({
+      publicKey: "SlSCeNQ8igmPy1my_",
+    });
+  })();
+</script>
+
 
 
 <body>
@@ -66,10 +78,10 @@
 
     <div class="container">
         
-        <h3 class="titulo-principal animate-slide-up delay-1">Full Stack<br>Developer</h3>
+        <h3 class="titulo-principal animate-slide-up delay-1">Full Stack<br>Developer.</h3>
 
         <p class="subtitulo animate-slide-up delay-2">
-            Desarrollador con enfoque en frontend y <br>sólidos conocimientos en backend.
+            Desarrollador con enfoque en paginas web y <br>sólidos conocimientos en frontend.
         </p>
         <br>
         <a href="#contacto" class="btn animate-slide-up delay-3">
@@ -212,7 +224,7 @@
             </div>
             <div class="project-info">
                 <h3>Recetario Gourmet</h3>
-                <p class="rol">Full Stack Developer</p>
+                <p class="rol">Frontend Developer</p>
                 <p class="descripcion">
                     Aplicación para gestión de recetas con categorías, buscador, modo oscuro y una experiencia enfocada en la cocina.
                 </p>
@@ -224,14 +236,57 @@
         <div class="project">
             <div class="project-info">
                 <h3>Motolavado ZonaBiker</h3>
-                <p class="rol">Full Stack Developer</p>
+                <p class="rol">Frontend Developer</p>
                 <p class="descripcion">
                     Sistema web para la gestión de citas, servicios y administración de un motolavado, con un diseño moderno y eficiente.
                 </p>
                 <button class="btn" onclick="expandirProyecto(4)">Ver Proyecto</button>
+                <a href="https://zonabikerperu.site/" target="_blank">
+                <button class="btn">Ir a la Página</button>
+                </a>
+
             </div>
             <div class="project-img" onclick="expandirProyecto(4)">
-                <img src="img/motolavado.png" alt="Motolavado">
+                <img src="img/motolovado.png" alt="Motolavado">
+            </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="project invertido">
+            <div class="project-img" onclick="expandirProyecto(5)">
+                <img src="img/frombiker.png" alt="Motolavado">
+            </div>
+            <div class="project-info">
+                <h3>Gestión Integral para Motolavado ZonaBiker</h3>
+                <p class="rol">Full Stack Developer</p>
+                <p class="descripcion">
+                    Plataforma web desarrollada para optimizar la administración del motolavado ZonaBiker. 
+                    Permite controlar ingresos, gastos, citas y servicios, con una interfaz moderna, ágil y adaptable a cualquier dispositivo.
+                </p>
+                <button class="btn" onclick="expandirProyecto(5)">Ver Proyecto</button>
+                <a href="https://form-zomabikerr.onrender.com/" target="_blank">
+                <button class="btn">Ir a la Página</button>
+                </a>
+            </div>
+        </div>
+
+                <!-- Proyecto 7 -->
+        <div class="project sweet-roll">
+            <div class="project-info">
+                <h3>Sweet & Roll - Ecommerce de Repostería</h3>     
+                <p class="rol">Frontend Developer</p>
+                <p class="descripcion">
+                          Sitio web para promocionar y vender rollos de canela y otros productos de repostería. 
+      Diseño responsivo, experiencia de usuario cuidada y enfoque en la conversión.
+                </p>
+                <button class="btn" onclick="expandirProyecto(6)">Ver Proyecto</button>
+                <a href="https://xsageuts57.github.io/SweetnRoll/" target="_blank">
+                <button class="btn">Ir a la Página</button>
+                </a>
+
+            </div>
+            <div class="project-img" onclick="expandirProyecto(6)">
+                <img src="img/rolls.png" alt="Motolavado">
             </div>
         </div>
     </div>
@@ -271,15 +326,215 @@
 
     <section id="contacto" class="contact">
         <div class="container">
-            <h2>Contacto</h2>
-            <p>¿Listo para llevar tu proyecto al siguiente nivel?</p>
-            <a href="https://wa.me/51977384380" target="_blank" class="btn">Escríbenos al WhatsApp</a>
+            <h2 class="section-title"><span>CONTACTO</span></h2>
+            <br>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>amayobenjamin16@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-text">
+                            <h3>Teléfono</h3>
+                            <p>+51 977 384 380</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h3>Ubicación</h3>
+                            <p>Lima, Perú</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Sígueme en</h3>
+                        <div class="social-icons">
+                            <a href="https://github.com/XSageuts57" target="_blank" class="social-link">
+                                <span class="social-icon">💻</span>
+                                GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/tuusuario" target="_blank" class="social-link">
+                                <span class="social-icon">💼</span>
+                                LinkedIn
+                            </a>
+                            <a href="https://instagram.com/jamin.ap57/" target="_blank" class="social-link">
+                                <span class="social-icon">📸</span>
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-actions">
+                    <div class="action-card">
+                        <h3>¿Tienes un proyecto en mente?</h3>
+                        <p>Hablemos sobre cómo puedo ayudarte a hacerlo realidad</p>
+                        <a href="https://wa.me/51977384380" target="_blank" class="btn btn-primary">
+                            💬 WhatsApp Directo
+                        </a>
+                    </div>
+                    
+                    <div class="action-card">
+                        <h3>¿Necesitas una cotización?</h3>
+                        <p>Recibe un presupuesto personalizado sin compromiso</p>
+                        <button onclick="abrirFormularioCotizacion()" class="btn btn-secondary">
+                            📧 Solicitar Cotización
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Modal de Cotización -->
+    <div id="modalCotizacion" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-logo">
+                    <img src="img/logoo01.png" alt="Sageuts Company">
+                </div>
+                <span class="close-modal" onclick="cerrarModal()">&times;</span>
+            </div>
+            
+            <div class="modal-body">
+                <h2>Solicitud de Cotización</h2>
+                <p class="modal-subtitle">Complete el formulario y recibirá una respuesta en menos de 24 horas</p>
+                
+                <form id="formCotizacion" class="cotizacion-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="empresa">Empresa / Proyecto</label>
+                        <input type="text" id="empresa" name="empresa">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tipoProyecto">Tipo de proyecto *</label>
+                        <select id="tipoProyecto" name="tipoProyecto" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="pagina-web">Página Web Profesional</option>
+                            <option value="automatizacion">Automatización WhatsApp</option>
+                            <option value="proyecto-academico">Proyecto Académico</option>
+                            <option value="tarjeta-digital">Tarjeta Digital con QR</option>
+                            <option value="hosting">Hosting + Dominio</option>
+                            <option value="otro">Otro tipo de proyecto</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="presupuesto">Presupuesto aproximado</label>
+                        <select id="presupuesto" name="presupuesto">
+                            <option value="">Seleccione un rango</option>
+                            <option value="500-1000">S/ 500 - S/ 1,000</option>
+                            <option value="1000-2000">S/ 1,000 - S/ 2,000</option>
+                            <option value="2000-5000">S/ 2,000 - S/ 5,000</option>
+                            <option value="5000+">Más de S/ 5,000</option>
+                            <option value="no-definido">Por definir</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="plazo">Plazo deseado</label>
+                        <select id="plazo" name="plazo">
+                            <option value="">Seleccione un plazo</option>
+                            <option value="urgente">Urgente (1-2 semanas)</option>
+                            <option value="normal">Normal (3-4 semanas)</option>
+                            <option value="flexible">Flexible (1-2 meses)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="descripcion">Descripción del proyecto *</label>
+                        <textarea id="descripcion" name="descripcion" rows="5" placeholder="Describa en detalle su proyecto, funcionalidades requeridas, objetivos, etc..." required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" onclick="cerrarModal()" class="btn btn-cancel">Cancelar</button>
+                        <button type="button" onclick="enviarCotizacion()" class="btn btn-submit">
+                            📨 Enviar Solicitud
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Sageuts Company. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="img/logoo01.png" alt="Sageuts Company" class="footer-logo">
+                    <p>Desarrollando soluciones digitales innovadoras con pasión y expertise técnica.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-btn">GitHub</a>
+                        <a href="#" class="social-btn">LinkedIn</a>
+                        <a href="#" class="social-btn">Instagram</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegación</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#portafolio">Portafolio</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#servicios">Desarrollo Web</a></li>
+                            <li><a href="#servicios">Automatización</a></li>
+                            <li><a href="#servicios">Proyectos Académicos</a></li>
+                            <li><a href="#servicios">Consultoría</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-credits">
+                    <p>&copy; 2025 Sageuts Company. Todos los derechos reservados.</p>
+                    <p>Desarrollado con ❤️ por Benjamin</p>
+                </div>
+                <div class="footer-badge">
+                    <span>🚀 Disponible para nuevos proyectos</span>
+                </div>
+            </div>
         </div>
     </footer>
 
